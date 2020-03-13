@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./HallOfMirrors.module.scss";
-import Face from "../../components/Face"
+import Face from "../../components/Face";
+import people from "../../data/people"
 
-const HallOfMirrors = props => {
-  const {face, leftEye, rightEye} = props;
+const HallOfMirrors = () => {
+ 
   return (
     <>
       <section className={styles.mirror}>
-        <Face face={face} leftEye={leftEye} rightEye={rightEye} />
-        <Face face={face} leftEye={leftEye} rightEye={rightEye} />
+        {people.map( person => <Face name={person.name} face={person.faceImg} leftEye={person.leftEyeImg} rightEye={person.rightEyeImg}/>)}
       </section>
     </>
   );

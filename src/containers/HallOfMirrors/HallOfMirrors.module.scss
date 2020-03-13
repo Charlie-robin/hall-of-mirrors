@@ -1,3 +1,4 @@
 .mirror {
-    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
