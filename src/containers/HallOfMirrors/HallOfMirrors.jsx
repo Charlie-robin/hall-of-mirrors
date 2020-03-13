@@ -8,6 +8,7 @@ const HallOfMirrors = props => {
     <>
       <section className={styles.mirror}>
         <Face face={face} leftEye={leftEye} rightEye={rightEye} />
+        <Face face={face} leftEye={leftEye} rightEye={rightEye} />
       </section>
     </>
   );
