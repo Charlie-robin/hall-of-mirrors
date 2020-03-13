@@ -1,0 +1,18 @@
+.faceContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .face {
+        width: 100%;
+    }
+
+    .eyeContainer {
+        top: 0;
+        position: absolute;
+        width: 25%;
+        height: 5%;
+        top: 30%;
+        left: 50%;
+    }
+}

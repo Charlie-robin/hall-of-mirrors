@@ -1,0 +1,27 @@
+.eye {
+    position: absolute;
+    height: 100%
+}
+
+.leftEye {
+    left: 0;
+}
+
+.rightEye {
+    right: 0;
+    top: 10%;  
+    height: 80%; 
+}
+
+.animate {
+    animation: rotation 2s ease-in infinite ;
+}
+
+@keyframes rotation {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(359deg);
+    }
+}
