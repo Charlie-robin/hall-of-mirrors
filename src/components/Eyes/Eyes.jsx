@@ -9,13 +9,13 @@ const Eyes = props => {
     <img
       className={`${styles.eye} ${eyeStyles} ${styles.animate}`}
       src={eyeOrientation}
-      alt="Shea's eyes"
+      alt="Spinning eyes"
     />
   ) : (
     <img
       className={`${styles.eye} ${eyeStyles}`}
       src={eyeOrientation}
-      alt="Shea's eyes"
+      alt="Static eyes"
     />
   );
 

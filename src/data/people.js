@@ -28,6 +28,24 @@ const people = [
     faceImg: mattFace,
     leftEyeImg: mattLeftEye,
     rightEyeImg: mattRightEye
+  },
+  {
+    name: "shea",
+    faceImg: sheaFace,
+    leftEyeImg: sheaLeftEye,
+    rightEyeImg: sheaRightEye
+  },
+  {
+    name: "liam",
+    faceImg: liamFace,
+    leftEyeImg: liamLeftEye,
+    rightEyeImg: liamRightEye
+  },
+  {
+    name: "matt",
+    faceImg: mattFace,
+    leftEyeImg: mattLeftEye,
+    rightEyeImg: mattRightEye
   }
 ];
 

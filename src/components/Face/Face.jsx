@@ -10,6 +10,7 @@ const Face = props => {
   return (
     <>
       <section className={styles.faceContainer} onClick={() => updateState(!currentState)}>
+        <div className={styles.mirror}></div>
         <img src={face} alt="" className={styles.face}/>
         <div className={`${styles.eyeContainer} ${styles[name]}`}>
           <Eyes isLeft={true} leftEye={leftEye} moveEyes={animateEyes}/>

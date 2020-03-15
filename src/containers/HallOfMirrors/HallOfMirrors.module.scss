@@ -1,4 +1,13 @@
 .mirror {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: linear-gradient(to top right,	#2f2f2f, #c9eac1);
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    grid-gap: 20px;
+    box-sizing: border-box;
+    
 }
