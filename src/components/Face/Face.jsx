@@ -6,15 +6,18 @@ const Face = props => {
   const { name, face, leftEye, rightEye } = props;
   const [currentState, updateState] = useState(false);
   const animateEyes = currentState;
- 
+
   return (
     <>
-      <section className={styles.faceContainer} onClick={() => updateState(!currentState)}>
+      <section
+        className={styles.faceContainer}
+        onClick={() => updateState(!currentState)}
+      >
         <div className={styles.mirror}></div>
-        <img src={face} alt="" className={styles.face}/>
+        <img src={face} alt="" className={styles.face} />
         <div className={`${styles.eyeContainer} ${styles[name]}`}>
-          <Eyes isLeft={true} leftEye={leftEye} moveEyes={animateEyes}/>
-          <Eyes isLeft={false} rightEye={rightEye} moveEyes={animateEyes}/>
+          <Eyes isLeft={true} leftEye={leftEye} moveEyes={animateEyes} />
+          <Eyes isLeft={false} rightEye={rightEye} moveEyes={animateEyes} />
         </div>
       </section>
     </>
