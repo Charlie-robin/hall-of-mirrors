@@ -1,28 +1,66 @@
 .mirror {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-image: linear-gradient(to top right,	#2f2f2f, #c9eac1);
-    width: 100%;
-    min-height: 100vh;
-    padding: 20px;
-    grid-gap: 50px;
-    box-sizing: border-box;
-    position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-image: linear-gradient(to top right, #2f2f2f, #c9eac1);
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  grid-gap: 50px;
+  box-sizing: border-box;
+  position: relative;
 
-    .info {
-        position: absolute;
-        left: 15px;
-        top: 15px;
-        width: 50px;
-        height: 50px;
-        color: #2f2f2f;
-        cursor: pointer;
-        z-index: 4;
-    
-        &:hover {
-          color: #c9eac1;
-        }
+  .info {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    color: #2f2f2f;
+    cursor: pointer;
+    z-index: 4;
+
+    &:hover {
+      color: #c9eac1;
     }
+  }
+
+  .numInfo {
+    z-index: 4;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 50px;
+    display: flex;
+
+    :first-child {
+      margin-right: 15px;
+      padding: 15px;
+      color: #c9eac1;
+      text-align: justify;
+      background-color: #2f2f2fcc;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      border-radius: 5px;
+    }
+
+    :last-child {
+      background-color: #2f2f2f;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c9eac1;
+    }
+  }
+
+  .numInfo:hover :first-child {
+    visibility: visible;
+    opacity: 1;
+  }
 }

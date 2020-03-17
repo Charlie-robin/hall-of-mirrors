@@ -30,16 +30,16 @@ const people = [
     rightEyeImg: mattRightEye
   },
   {
-    name: "shea",
-    faceImg: sheaFace,
-    leftEyeImg: sheaLeftEye,
-    rightEyeImg: sheaRightEye
-  },
-  {
     name: "liam",
     faceImg: liamFace,
     leftEyeImg: liamLeftEye,
     rightEyeImg: liamRightEye
+  },
+  {
+    name: "shea",
+    faceImg: sheaFace,
+    leftEyeImg: sheaLeftEye,
+    rightEyeImg: sheaRightEye
   },
   {
     name: "matt",
@@ -54,17 +54,36 @@ const people = [
     rightEyeImg: sheaRightEye
   },
   {
+    name: "matt",
+    faceImg: mattFace,
+    leftEyeImg: mattLeftEye,
+    rightEyeImg: mattRightEye
+  },
+  {
     name: "liam",
     faceImg: liamFace,
     leftEyeImg: liamLeftEye,
     rightEyeImg: liamRightEye
   },
   {
+    name: "shea",
+    faceImg: sheaFace,
+    leftEyeImg: sheaLeftEye,
+    rightEyeImg: sheaRightEye
+  },
+  {
     name: "matt",
     faceImg: mattFace,
     leftEyeImg: mattLeftEye,
     rightEyeImg: mattRightEye
-  }
+  },
+  {
+    name: "liam",
+    faceImg: liamFace,
+    leftEyeImg: liamLeftEye,
+    rightEyeImg: liamRightEye
+  },
+  
 ];
 
 export default people;

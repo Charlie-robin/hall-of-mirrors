@@ -6,12 +6,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 const HallOfMirrors = props => {
-  const { handleClick } = props;
+  const { handleClick, numMirrors } = props;
+
   return (
     <>
       <section className={styles.mirror}>
-        <FontAwesomeIcon icon={faInfoCircle} className={styles.info} onClick={event => handleClick(event.target.value)}/>
-        {people.map(person => (
+        <FontAwesomeIcon
+          icon={faInfoCircle}
+          className={styles.info}
+          onClick={event => handleClick(event.target.value)}
+        />
+        <div className={styles.numInfo}>
+          <p>The random number API has given you {numMirrors} to view.</p>
+          <p>{numMirrors}</p>
+        </div>
+        {people.slice(0, numMirrors).map(person => (
           <Face
             name={person.name}
             face={person.faceImg}
