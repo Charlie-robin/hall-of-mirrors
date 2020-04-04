@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./LandingPage.module.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 const LandingPage = props => {
   const {isVisible, handleClick} = props
