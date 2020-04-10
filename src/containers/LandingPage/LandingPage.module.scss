@@ -13,9 +13,9 @@
   h1 {
     padding: 15px;
     letter-spacing: 2px;
-    width: 25%;
+    width: 80%;
     border: #c9eac1 2px solid;
-    font-size: 60px;
+    font-size: 40px;
     word-spacing: 100vw;
     background-color: #c9eac1;
     color: #2f2f2f;
@@ -26,8 +26,8 @@
     position: absolute;
     right: 15px;
     top: 15px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     color: #c9eac1;
     background-color: #2f2f2f;
     cursor: pointer;
@@ -40,17 +40,49 @@
   }
 
   .content {
-    width: 25%;
+    width: 80%;
     padding: 15px;
     border: #c9eac1 1px solid;
     border-radius: 0 0 10px 10px;
     background-color: #2f2f2f;
     p {
       color: #c9eac1;
-      font-size: 20px;
+      font-size: 15px;
     }
     :first-child {
       padding-bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 764px) {
+  .landingPage {
+    h1 {
+      width: 40%;
+      font-size: 60px;
+    }
+
+    .cross {
+      width: 50px;
+      height: 50px;
+    }
+
+    .content {
+      width: 40%;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .landingPage {
+    h1 {
+      width: 25%;
+    }
+
+    .content {
+      width: 25%;
     }
   }
 }
