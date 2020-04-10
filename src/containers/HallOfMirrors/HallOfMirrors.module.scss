@@ -1,24 +1,20 @@
 .mirror {
   display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   background-image: linear-gradient(to top right, #2f2f2f, #c9eac1);
   width: 100%;
   min-height: 100vh;
   padding: 20px;
-  grid-gap: 50px;
+  grid-gap: 20px;
   box-sizing: border-box;
   position: relative;
 
-  
-
   .info {
-    position: absolute;
+    position: fixed;
     left: 15px;
-    top: 15px;
-    width: 50px;
-    height: 50px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
     color: #2f2f2f;
     cursor: pointer;
     z-index: 4;
@@ -33,11 +29,10 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    height: 50px;
     display: flex;
 
     :first-child {
-      margin-right: 15px;
+      margin-right: 5px;
       padding: 15px;
       color: #c9eac1;
       text-align: justify;
@@ -50,9 +45,9 @@
 
     :last-child {
       background-color: #2f2f2f;
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
+      width: 55px;
+      height: 40px;
+      font-size: 20px;
       border-radius: 100%;
       display: flex;
       align-items: center;
@@ -67,15 +62,62 @@
   }
 }
 
-.oneMirror {
-  grid-template-columns: 1fr;
-  height: 100vh;
-  width: 100%;
-  padding: 20px 30%;
+@media only screen and (min-width: 724px) {
+  .mirror {
+    grid-template-columns: 1fr 1fr;
+
+    .info {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .numInfo {
+      :last-child {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+      }
+    }
+
+    .numInfo:hover :first-child {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .oneMirror {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 20%;
+  }
+
+  .twoMirror {
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding: 40px 20px;
+  }
 }
 
-.twoMirror {
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-  padding: 20px 15%;
+@media only screen and (min-width: 1024px) {
+  .mirror {
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+  }
+  .oneMirror {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 30%;
+  }
+
+  .twoMirror {
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding: 20px 15%;
+  }
 }

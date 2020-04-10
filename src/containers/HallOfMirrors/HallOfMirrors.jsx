@@ -7,14 +7,12 @@ import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 const HallOfMirrors = (props) => {
   const { handleClick, numMirrors } = props;
-
   const checkMirrorNum = (number) =>
     number === 1 ? "oneMirror" : number === 2 ? "twoMirror" : "";
 
   const mirrorDisplay = numMirrors ? checkMirrorNum(numMirrors) : "";
 
   const randonmKey = () => parseInt(Math.random() * 1000);
-  
 
   return (
     <>
@@ -30,7 +28,7 @@ const HallOfMirrors = (props) => {
         </div>
         {people.slice(0, numMirrors).map((person) => (
           <Face
-          key={randonmKey()}
+            key={randonmKey()}
             name={person.name}
             face={person.faceImg}
             leftEye={person.leftEyeImg}
