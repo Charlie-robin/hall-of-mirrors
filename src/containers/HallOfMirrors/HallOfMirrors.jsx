@@ -13,6 +13,9 @@ const HallOfMirrors = (props) => {
 
   const mirrorDisplay = numMirrors ? checkMirrorNum(numMirrors) : "";
 
+  const randonmKey = () => parseInt(Math.random() * 1000);
+  
+
   return (
     <>
       <section className={`${styles.mirror} ${styles[mirrorDisplay]}`}>
@@ -27,6 +30,7 @@ const HallOfMirrors = (props) => {
         </div>
         {people.slice(0, numMirrors).map((person) => (
           <Face
+          key={randonmKey()}
             name={person.name}
             face={person.faceImg}
             leftEye={person.leftEyeImg}
